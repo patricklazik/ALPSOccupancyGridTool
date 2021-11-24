@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message ALPSOccupancyGrid {
+    float cellsPerMeter = 1; // 1/size of a cell in meters
+    uint32 bytesPerCell = 2; // number of bytes used to store a single cell, usually 4
+    uint32 width = 3; // number of colums in the grid
+    uint32 height = 4; // number of rows in the grid
+    bytes grid = 5; // serialized grid
+}
